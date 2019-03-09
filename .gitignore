@@ -3,3 +3,9 @@
 ################################################################################
 
 /TwitterSupport/.vs
+/TwitterSupport/TwitterSupport.ApplicationService/obj
+/TwitterSupport/TwitterSupport.CrossCutting/obj
+/TwitterSupport/TwitterSupport.DependencyInjection/obj
+/TwitterSupport/TwitterSupport.Model/obj
+/TwitterSupport/TwitterSupport.Services/obj
+/TwitterSupport/TwitterSupport.UserInterface/e2e
