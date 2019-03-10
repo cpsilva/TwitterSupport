@@ -9,3 +9,8 @@
 /TwitterSupport/TwitterSupport.Model/obj
 /TwitterSupport/TwitterSupport.Services/obj
 /TwitterSupport/TwitterSupport.UserInterface/e2e
+/TwitterSupport/TwitterSupport.ApplicationService/bin/Debug/netcoreapp2.2
+/TwitterSupport/TwitterSupport.CrossCutting/bin/Debug/netcoreapp2.1
+/TwitterSupport/TwitterSupport.DependencyInjection/bin/Debug/netcoreapp2.1
+/TwitterSupport/TwitterSupport.Model/bin/Debug/netcoreapp2.1
+/TwitterSupport/TwitterSupport.Services/bin/Debug/netcoreapp2.1
