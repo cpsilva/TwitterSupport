@@ -16,6 +16,10 @@ namespace TwitterSupport.Services.TweetService
 
         private IEnumerable<TweetMostRelevant> ConvertTweetRootToTweetSupport(TweetRoot tweetRoot)
         {
+            if (tweetRoot.statuses.Any(x => x.entities == null))
+            {
+                return new List<TweetMostRelevant>();
+            }
             var result = tweetRoot.statuses.Where(x => x.entities.user_mentions.Any(y => y.id == 42) && (x.in_reply_to_user_id != 42 || x.in_reply_to_user_id == null));
 
             return result.Select(x => new TweetMostRelevant
