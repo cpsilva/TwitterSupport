@@ -19,7 +19,15 @@ namespace TwitterSupport.ApplicationService.Controllers
         }
 
         [HttpGet]
-        public List<TweetSupport> MostRelevant()
+        [Route("MostMentions")]
+        public List<TweetMostMentions> MostMentions()
+        {
+            return _tweetService.SelectOrderedMostMentionedTweets();
+        }
+
+        [HttpGet]
+        [Route("MostRelevant")]
+        public List<TweetMostRelevant> MostRelevant()
         {
             return _tweetService.SelectOrderedMostRelevantTweets();
         }

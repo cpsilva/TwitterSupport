@@ -3,7 +3,7 @@ using TwitterSupport.Model.Tweet;
 
 namespace TwitterSupport.Model.Support
 {
-    public class TweetSupport
+    public class TweetMostRelevant
     {
         public string Username { get; set; }
         public int Followers { get; set; }

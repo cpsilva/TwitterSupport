@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterSupport.DependencyIn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterSupport.CrossCutting", "TwitterSupport.CrossCutting\TwitterSupport.CrossCutting.csproj", "{45FD68F6-829B-4866-9D2B-AD768ACF5E26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterSupport.ApplicationService", "TwitterSupport.ApplicationService\TwitterSupport.ApplicationService.csproj", "{FBC931FE-39FB-4BC7-97A4-A91215FCCC56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterSupport.ApplicationService", "TwitterSupport.ApplicationService\TwitterSupport.ApplicationService.csproj", "{FBC931FE-39FB-4BC7-97A4-A91215FCCC56}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TwitterSupport.UserInterface", "TwitterSupport.UserInterface\", "{0F1C1AB2-AD84-40CC-B892-BE403F94368C}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -33,6 +33,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TwitterSupport.UserInterfac
 		VWDPort = "52486"
 		SlnRelativePath = "TwitterSupport.UserInterface\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterSupport.Tests", "TwitterSupport.Tests\TwitterSupport.Tests.csproj", "{4A8CAB2E-27FA-41AC-8E20-31B257EF1D9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{0F1C1AB2-AD84-40CC-B892-BE403F94368C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F1C1AB2-AD84-40CC-B892-BE403F94368C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F1C1AB2-AD84-40CC-B892-BE403F94368C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4A8CAB2E-27FA-41AC-8E20-31B257EF1D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8CAB2E-27FA-41AC-8E20-31B257EF1D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8CAB2E-27FA-41AC-8E20-31B257EF1D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8CAB2E-27FA-41AC-8E20-31B257EF1D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

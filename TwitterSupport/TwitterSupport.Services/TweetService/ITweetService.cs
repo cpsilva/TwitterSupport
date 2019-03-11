@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using TwitterSupport.Model.Support;
 using TwitterSupport.Model.Tweet;
 
@@ -9,8 +8,8 @@ namespace TwitterSupport.Services.TweetService
     {
         TweetRoot GetTweets();
 
-        List<TweetSupport> SelectOrderedMostRelevantTweets();
+        List<TweetMostRelevant> SelectOrderedMostRelevantTweets();
 
-        List<IGrouping<string, TweetSupport>> SelectOrderedMostMentionedTweets();
+        List<TweetMostMentions> SelectOrderedMostMentionedTweets();
     }
 }

@@ -1,30 +1,30 @@
 <div class="uk-overflow-auto">
-  <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
-      <thead>
-          <tr>
-              <th class="uk-table-shrink"></th>
-              <th class="uk-table-shrink">Preserve</th>
-              <th class="uk-table-shrink">Username</th>
-              <th class="uk-table-expand">Tweet</th>
-              <th class="uk-table-shrink uk-text-nowrap">Followers</th>
-              <th class="uk-table-shrink uk-text-nowrap">Retweets</th>
-              <th class="uk-table-shrink uk-text-nowrap">Favorites</th>
-              <th class="uk-table-shrink uk-text-nowrap">Date</th>
-          </tr>
-      </thead>
-      <tbody *ngFor="let tweet of tweets">
-          <tr>
-              <td><input class="uk-checkbox" type="checkbox"></td>
-              <td><img class="uk-preserve-width uk-border-circle" src="../../../assets/twitter.png" width="40" alt=""></td>
-              <td class="uk-table-link">
-                  <a class="uk-link-reset" href="">{{tweet.username}}</a>
-              </td>
-              <td class="uk-text-truncate">{{tweet.tweet}}</td>
-              <td class="uk-text-nowrap">{{tweet.followers}}</td>
-              <td class="uk-text-nowrap">{{tweet.retweets}}</td>
-              <td class="uk-text-nowrap">{{tweet.tweetFavorites}}</td>
-              <td class="uk-text-nowrap">{{tweet.date}}</td>
-          </tr>
-      </tbody>
-  </table>
+    <p>
+        <button class="uk-button uk-button-secondary uk-button-large" (click)="goTo()">Most Mentioned</button>
+    </p>
+    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+        <thead>
+            <tr>
+                <th class="uk-table-shrink"></th>
+                <th class="uk-table-shrink">Username</th>
+                <th class="uk-table-expand">Tweet</th>
+                <th class="uk-table-shrink uk-text-nowrap">Followers</th>
+                <th class="uk-table-shrink uk-text-nowrap">Retweets</th>
+                <th class="uk-table-shrink uk-text-nowrap">Favorites</th>
+                <th class="uk-table-shrink uk-text-nowrap">Date</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let tweet of tweets">
+            <tr>
+                <td><img class="uk-preserve-width uk-border-circle" src="../../../assets/twitter.png" width="40" alt="">
+                </td>
+                <td class="uk-text-nowrap">{{tweet.username}}</td>
+                <td class="uk-text-truncate">{{tweet.tweet}}</td>
+                <td class="uk-text-nowrap">{{tweet.followers}}</td>
+                <td class="uk-text-nowrap">{{tweet.retweets}}</td>
+                <td class="uk-text-nowrap">{{tweet.tweetFavorites}}</td>
+                <td class="uk-text-nowrap">{{tweet.date}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
