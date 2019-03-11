@@ -16,6 +16,7 @@ namespace TwitterSupport.DependencyInjection
         public static void RegisterServices(this IServiceCollection services)
         {
             services.AddScoped<ITweetService, TweetService>();
+            services.AddScoped<ITreatmentTweetService, TreatmentTweetService>();
             _serviceProvider = services.BuildServiceProvider();
         }
     }

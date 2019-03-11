@@ -11,25 +11,25 @@ namespace TwitterSupport.ApplicationService.Controllers
     [AllowAnonymous]
     public class TweetController : ControllerBase
     {
-        public ITweetService _tweetService { get; set; }
+        public ITreatmentTweetService _treatmentTweetService { get; set; }
 
-        public TweetController(ITweetService tweetService)
+        public TweetController(ITreatmentTweetService treatmentTweetService)
         {
-            _tweetService = tweetService;
+            _treatmentTweetService = treatmentTweetService;
         }
 
         [HttpGet]
         [Route("MostMentions")]
         public List<TweetMostMentions> MostMentions()
         {
-            return _tweetService.SelectOrderedMostMentionedTweets();
+            return _treatmentTweetService.SelectOrderedMostMentionedTweets();
         }
 
         [HttpGet]
         [Route("MostRelevant")]
         public List<TweetMostRelevant> MostRelevant()
         {
-            return _tweetService.SelectOrderedMostRelevantTweets();
+            return _treatmentTweetService.SelectOrderedMostRelevantTweets();
         }
     }
 }
