@@ -27,11 +27,11 @@
 ![](https://github.com/cpsilva/TwitterSupport/blob/master/Screenshots/Layers.PNG)
 
 # Execução do Projeto Angular e IIS
-1. Executar via prompt de comando o 'npm i' na pasta WorldCupMovies.UserInterface para instalar as dependencias.
+1. Executar via prompt de comando o 'npm i' na pasta TwitterSupport.UserInterface para instalar as dependencias.
 
-2. Apos obter as depedencias navegar via prompt de comando até o projeto WorldCupMovies.UserInterface e executar o comando 'ng serve -o --aot' este comando já ira abrir a interface do sistema no browser.
+2. Apos obter as depedencias navegar via prompt de comando até o projeto TwitterSupport.UserInterface e executar o comando 'ng serve -o --aot' este comando já ira abrir a interface do sistema no browser.
 
-3. No Visual Studio selecionar o projeto WorldCupMovies.ApplicationService como Startup Project.
+3. No Visual Studio selecionar o projeto TwitterSupport.ApplicationService como Startup Project.
 
 4. Executar o projeto com o IIS Express.
 
