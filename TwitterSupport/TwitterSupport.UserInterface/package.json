@@ -2,12 +2,12 @@
   "name": "twitter-support-user-interface",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "restore": "npm install --suppess-warnings --loglevel=error",
+    "serve": "ng serve",
+    "container": "ng build --configuration=container",
+    "development": "ng build --configuration=development",
+    "staging": "ng build --configuration=staging",
+    "production": "ng build --configuration=production"
   },
   "private": true,
   "dependencies": {

@@ -31,7 +31,7 @@ namespace TwitterSupport.Services.TweetService
                 Date = x.created_at,
                 Tweet = x.text,
                 TweetLink = x.entities.urls.Select(y => new Urls { expanded_url = y.expanded_url }),
-                ProfileLink = null
+                ProfileLink = null 
             }).OrderByDescending(x => x.Followers).ThenByDescending(x => x.Retweets).ThenByDescending(x => x.TweetFavorites);
         }
 

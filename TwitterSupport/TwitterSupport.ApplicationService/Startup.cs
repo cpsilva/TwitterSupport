@@ -9,15 +9,16 @@ namespace TwitterSupport.ApplicationService
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
-            Configuration = configuration;
+            Configuration = environment.Configuration();
         }
 
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(Configuration);
             services.AddCors();
             services.AddMvcCustom();
             services.RegisterServices();
